@@ -395,13 +395,13 @@ function listener()
 function triggerX()
 {
 	setTimeout(trigger,50,jump_1_addr);
-	setTimeout(showMsg,2000,"<h2><span style='color:red'>Failed to load setup file. Close the browser and try again.</span></h2>");
+	setTimeout(showMsg,2000,"<h2><span style='color:red'>Não foi possível carregar o arquivo de instalação. Feche o navegador e tente novamente.</span></h2>");
 	t_out=0;
 	total_loops=0;
 }
 function HFWmsg()
 {
-	showMsg("<h2><span style='color:red'>You must install Hybrid Firmware (HFW) 4.92 before installing HEN!</h2></span>");
+	showMsg("<h2><span style='color:red'>Você precisa instalar o Hybrid Firmware (HFW) 4.92 antes de instalar o HEN!</h2></span>");
 	throw new Error('');
 }
 if(fwv=="4.92"){initROP(true)}else{HFWmsg()}
